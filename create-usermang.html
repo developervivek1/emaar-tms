@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>tms</title>
+
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    
+    <!-- Google Font: Source Sans Pro -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    <div class="wrapper">
+       <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item d-block d-md-block d-lg-none d-xl-none mr-3">
+        <a class="nav-link p-0" data-widget="pushmenu" href="#" role="button">menu</a>
+      </li>
+      <li class="nav-item d-none d-sm-none d-md-block d-lg-block d-xl-block">
+        <h4 class="ml-1 mt-0 mb-0 text-dark">User Management</h4>
+      </li>
+     
+    </ul>
+       <ul class="navbar-nav ml-auto">
+    
+        <!-- SEARCH FORM -->
+        <li class="nav-item" id="topsearch">
+    <!-- SEARCH FORM -->
+    <form class="form-inline mt-1" action="#" method="POST">
+      <div class="input-group input-group-sm">
+        <input type="search" placeholder="Search" name="search" class="lochsr1" autofocus>
+      </div>
+    </form>
+    </li>
+    <li id="hidesearch">
+      <button class="btn btn-navbar pt-2 " type="button" onclick="myFunction()">
+        <img src="dist/img/Icon-search.svg" alt="Logo" class="" width="15px"/>
+      </button>
+    </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <img src="dist/img/notification.svg" alt="Logo" class=""/>
+            <!-- <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span> -->
+          </a>
+          <div class="dropdown-menu notifidrop dropdown-menu-right pt-1 pb-2 pl-2 pr-2">
+            <div class="messagenot">
+            <span class="dropdown-item dropdown-header text-left">Notifications</span>
+            <span class="mt-3"> <a href="#"><img src="dist/img/cancel.png" alt="Logo" class="" width="12px"/> </a></span>
+            </div>
+            <!-- <div class="dropdown-divider"></div> -->
+            <div class="nothheight">
+            <a href="#" class="dropdown-item notifidropitem notifidropitem1">
+              <h5 class="mb-1">Your request Major Work Permit 30032 got accepted</h5>
+              <div class="messagenot"> <h6 class="mb-0">Lorem ipsum doelt et udeutib iptumlore<br> etui dolordoelt</h6>
+                <span class="float-right text-muted text-sm">3 mins</span></div>
+            </a>
+            <a href="#" class="dropdown-item notifidropitem pt-2 pb-1">
+              <h5 class="mb-1">Your request Major Work Permit 30032 got accepted</h5>
+              <div class="messagenot"> <h6 class="mb-0">Lorem ipsum doelt et udeutib iptumlore<br> etui dolordoelt</h6>
+                <span class="float-right text-muted text-sm">3 mins</span></div>
+            </a>
+            <a href="#" class="dropdown-item notifidropitem pt-2 pb-1">
+              <h5 class="mb-1">Your request Major Work Permit 30032 got accepted</h5>
+              <div class="messagenot"> <h6 class="mb-0">Lorem ipsum doelt et udeutib iptumlore<br> etui dolordoelt</h6>
+                <span class="float-right text-muted text-sm">3 mins</span></div>
+            </a>
+            <a href="#" class="dropdown-item notifidropitem pt-2 pb-1">
+              <h5 class="mb-1">Your request Major Work Permit 30032 got accepted</h5>
+              <div class="messagenot"> <h6 class="mb-0">Lorem ipsum doelt et udeutib iptumlore<br> etui dolordoelt</h6>
+                <span class="float-right text-muted text-sm">3 mins</span></div>
+            </a>
+            <a href="#" class="dropdown-item notifidropitem pt-2 pb-1">
+              <h5 class="mb-1">Your request Major Work Permit 30032 got accepted</h5>
+              <div class="messagenot"> <h6 class="mb-0">Lorem ipsum doelt et udeutib iptumlore<br> etui dolordoelt</h6>
+                <span class="float-right text-muted text-sm">3 mins</span></div>
+            </a>
+          </div>
+          <a href="#" class="dropdown-item dropdown-footer">View all</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="user-panel d-flex mt-1"  data-toggle="dropdown">
+            <div class="image d-none d-sm-none d-md-block d-lg-block d-xl-block">
+              <img src="dist/img/user.png" class="" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Naveen <img src="dist/img/downarrow.svg" class="ml-1" alt="User Image" width="12px"></a>  
+              
+            </div>
+          
+          </div>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-item">
+              <a href="profile.html" class=""> <img src="dist/img/profile.svg" alt="Logo" class="mr-2" /> Profile</a><hr class="mt-1 mb-1">
+            </div>
+            <div class="dropdown-item">
+             <a href="#" class=""> <img src="dist/img/settings.svg" alt="Logo" class="mr-2" /> Settings</a><hr class="mt-1 mb-1">
+           </div>
+           <div class="dropdown-item">
+            <a href="choosemall.html" class=""> <img src="dist/img/logout.svg" alt="Logo" class="mr-2" /> Switch mall</a><hr class="mt-1 mb-1">
+          </div>
+           <div class="dropdown-item">
+             <a href="signin.html" class=""> <img src="dist/img/logout.svg" alt="Logo" class="mr-2" /> Logout</a>
+           </div>
+           
+           </div>
+        </li>
+      </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link mt-2">
+      <img src="dist/img/logoemar.svg" alt="Logo" class="" width="80px"/>
+      </a>
+
+   <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+   
+    <!-- Sidebar Menu -->
+    <nav class="mt-4">
+      <ul class="nav nav-pills nav-sidebar flex-column" >
+       
+        <li class="nav-item">
+          <a href="dashboard.html" class="nav-link pl-0">
+            <img src="dist/img/dash.svg" alt="Logo" class="mr-3"/>
+            Dashboard
+           </a>
+         
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link pl-0 collapsed" href="#submenu2" data-toggle="collapse"
+            data-target="#submenu2">
+            <img src="dist/img/requests.svg" alt="Logo" class="mr-3" />
+            Requests
+          </a>
+          <div class="collapse" id="submenu2" aria-expanded="false">
+            <ul class="flex-column pl-4 nav">
+              <li class="nav-item mb-2"><a class="nav-link py-0" href="allrequest.html"><span> - All request</span></a></li>
+              <li class="nav-item mb-2"><a class="nav-link py-0" href="mydraft.html"><span> - Drafts</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link  pl-0 collapsed" href="#submenu" data-toggle="collapse" data-target="#submenu">
+            <img src="dist/img/campaigns-events.svg" alt="Logo" class="mr-3"/>
+            Events
+           </a>
+           <div class="collapse" id="submenu" aria-expanded="false">
+            <ul class="flex-column pl-4 nav">
+                <li class="nav-item mb-2"><a class="nav-link py-0" href="event.html"><span> -  Events</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link py-0" href="mydraft.html"><span> - Drafts</span></a></li>
+            </ul>
+        </div>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link active pl-0 collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">
+            <img src="dist/img/storein.svg" alt="Logo" class="mr-3"/>
+            My Store
+           </a>
+           <div class="collapse" id="submenu3" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item mb-2"><a class="nav-link  py-0" href="product.html"><span> - Products</span></a>
+              </li>
+              <li class="nav-item mb-2"><a class="nav-link py-0" href="voucher.html"><span> - Vouchers</span></a>
+              </li>
+              <li class="nav-item mb-2"><a class="nav-link  py-0" href="#"><span> - Tenancy
+                    Location</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link active py-0" href="usermang.html"><span> -  User Management</span></a></li>
+                <li class="nav-item mb-2"><a class="nav-link  py-0" href="contact.html"><span> - Contacts</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link py-0" href="store.html"><span> - Stores</span></a></li>
+  
+            </ul>
+        </div>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link  pl-0 collapsed " href="#submenu1" data-toggle="collapse" data-target="#submenu1">
+            <img src="dist/img/offersin.svg" alt="Logo" class="mr-3 "/>
+            Offers
+           </a>
+           <div class="collapse" id="submenu1" aria-expanded="false">
+            <ul class="flex-column pl-4 nav">
+                <!-- <li class="nav-item mb-2"><a class="nav-link py-0" href="#"><span> - Analytics</span></a></li> -->
+                <li class="nav-item mb-2"><a class="nav-link py-0" href="offer.html"><span> - All offers</span></a></li>
+                <li class="nav-item"><a class="nav-link py-0" href="mydraft.html"><span> - Drafts</span></a></li>
+               
+            </ul>
+        </div>
+        </li>
+       
+        <li class="nav-item  mb-5">
+          <a href="myapplication.html" class="nav-link pl-0">
+            <img src="dist/img/store.svg" alt="Logo" class="mr-3"/>
+            My Applications
+           </a>
+        </li>
+        <li class="nav-item mt-5">
+          <a href="#" class="nav-link pl-0">
+            <img src="dist/img/logout-icon.svg" alt="Logo" class=""/>
+            </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+  </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header p-0">
+                <div class="container-fluid">
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">User Management</a></li>
+                                <li class="breadcrumb-item active">Create New User</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.content-header -->
+          <div class="progress1 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                 <div class="col-md-12">
+                 <div class="divprogress">
+              <h4 class="mb-4">To publish Your store Online Complete the store setup</h4>
+             
+             <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                  </div>
+               </div>
+               <span>30% done</span>
+            </div>
+              </div>
+              </div>
+          </div>
+          </div>
+            <!-- Main content -->
+            <section class="content" id="main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="accordion" id="faq">
+                                <form action="#" method="POST">
+                                <div class="card">
+                                    <div class="card-header" id="faqhead1">
+                                        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
+                                        aria-expanded="true" aria-controls="faq1"><img
+                                        src="dist/img/userbasic.svg" alt="Logo" class="mr-2" /> Basic detail</a>
+                                    </div>
+            
+                                    <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq">
+                                        <div class="card-body">
+                                            <h4>Enter Details</h4>
+                                            <div class="row mt-3">
+                                                <div class="col-md-3 mr-0">
+                                                  <div class="form-group">
+                                                    <label>Add Image</label>
+                                                    <div class="file-upload">
+                                                      <div class="image-upload-wrap">
+                                                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                                      <div class="drag-text">
+                                                        <p class="mb-1">  <img src="dist/img/upload.svg" alt="Logo" class="icon" /></p>
+                                                        <h3>Drag and drop  or Browse</h3>
+                                                      </div>
+                                                    </div>
+                                                    <div class="file-upload-content">
+                                                      <img class="file-upload-image" src="#" alt="your image" />
+                                                      <div class="image-title-wrap">
+                                                        <a onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                  <div class="row mt-md-4">
+                                                    <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Full Name</label>
+                                                        <select class="form-control service-area" required>
+                                                            <option selected="selected" class="service-small">XYZ</option>
+                                                            <option class="service-small">XYZ</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <div class="form-group">
+                                                          <label for="exampleInputEmail1">Gender</label>
+                                                          <select class="form-control service-area" required>
+                                                              <option selected="selected" class="service-small">Male</option>
+                                                              <option class="service-small">FeMale</option>
+                                                          </select>
+                                                      </div>
+                                                      </div>
+                                                      <div class="col-md-4">
+                                                        <div class="form-group">
+                                                          <label for="exampleInputEmail1">Date of Birth</label>
+                                                          <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="23/04/2021" required="">
+                                                      </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                          <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email</label>
+                                                            <input type="email" name="date" class="form-control" id="exampleInputEmail1" placeholder="email@gmail.com" required="">
+                                                        </div>
+                                                          </div>
+                                                          <div class="col-md-4">
+                                                            <div class="form-group">
+                                                              <label for="exampleInputEmail1">Phone number</label>
+                                                              <input type="tel" name="date" class="form-control" id="exampleInputEmail1" placeholder="Phone number" required="">
+                                                          </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                              <div class="form-group">
+                                                                  <label for="exampleInputEmail1">Contact Role</label>
+                                                                  <select class="form-control service-area" required>
+                                                                      <option selected="selected" class="service-small">Contact Role</option>
+                                                                      <option class="service-small">Store Manger</option>
+                                                                  </select>
+                                                              </div>
+                                                            </div>
+                                                  </div>
+                                                </div>
+                                              
+                                            </div>
+                                          
+                                            <hr>
+                                            
+                                            <h4 class="mt-4">Location</h4>
+                                            <div class="row mt-3">
+                                              <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Country</label>
+                                                    <select class="form-control service-area" required>
+                                                        <option selected="selected" class="service-small">India</option>
+                                                        <option class="service-small">India</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">State</label>
+                                                    <select class="form-control service-area" required>
+                                                        <option selected="selected" class="service-small">Karnataka</option>
+                                                        <option class="service-small">Karnataka</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">City</label>
+                                                    <select class="form-control service-area" required>
+                                                        <option selected="selected" class="service-small">City</option>
+                                                        <option class="service-small">Bangalore</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="faqhead2">
+                                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                        aria-expanded="true" aria-controls="faq2"><img
+                                        src="dist/img/role.svg" alt="Logo" class="mr-2" /> Select Role</a>
+                                    </div>
+            
+                                    <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                                        <div class="card-body">
+                                          <h4>Roles(1) <a href="#" class="btn-add btn-role btn-cancel ml-3">Add Role +</a></h4>
+                                          <div class="row mt-3">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1 " class="mb-2">Select Role Type*</label>
+                                                 <div class="d-flex">
+                                                    <div class="custom-control custom-radio mr-4">
+                                                       <input type="checkbox" id="customRadio1" name="roleType" class="custom-control-input" checked="">
+                                                       <label class="custom-control-label" for="customRadio1">External</label>
+                                                     </div>
+                                                     <div class="custom-control custom-radio">
+                                                       <input type="checkbox" id="customRadio11" name="roleType" class="custom-control-input" onchange="window.location.href='targetseg.html'">
+                                                       <label class="custom-control-label" for="customRadio11">Internal</label>
+                                                      </div>
+                                                   </div>
+                                                   </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1 " class="mb-2">Role Detail</label>
+                                                 <div class="d-flex">
+                                                    <div class="custom-control custom-radio mr-4">
+                                                       <input type="checkbox" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                                                       <label class="custom-control-label" for="customRadio1">Tenant</label>
+                                                     </div>
+                                                     <div class="custom-control custom-radio ">
+                                                       <input type="checkbox" id="customRadio11" name="customRadio" class="custom-control-input" onchange="window.location.href='targetseg.html'">
+                                                       <label class="custom-control-label" for="customRadio11">Contractor</label>
+                                                      </div>
+                                                     
+                                                   </div>
+                                                   </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mt-3">
+                                          <div class="col-md-3">
+                                            <div class="form-group mb-1">
+                                                <label for="exampleInputEmail1">Select Role*</label>
+                                                <select class="form-control service-area" required>
+                                                    <option selected="selected" class="service-small">Select</option>
+                                                    <option class="service-small">Select</option>
+                                                </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-group mb-1">
+                                              <label for="exampleInputEmail1">Valid from</label>
+                                              <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="23/04/2021" required="">
+                                          </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                            <div class="form-group mb-1">
+                                              <label for="exampleInputEmail1">Valid to</label>
+                                              <input type="date" name="date" class="form-control" id="exampleInputEmail1" placeholder="23/04/2021" required="">
+                                          </div>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <a href="#popup2" class="seeall">See All Modules for this role</a>
+                                          </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                          <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail1">Property Allocation</label>
+                                              <div class="custom-control custom-checkbox mt-0">
+                                                  <input type="checkbox" class="custom-control-input"
+                                                      id="customCheck2" >
+                                                  <label class="custom-control-label" for="customCheck2">All <img
+                                                    src="dist/img/alldown.svg" alt="Logo" class="ml-1" /> </label>
+                                              </div>
+                                          </div>
+                                         </div>
+                                      </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floatbtn">
+                                    <a href="usermang.html" class="btn-add btn-cancel mr-2">Cancel</a> <a href="#popup1"
+                                        class="btn-add btn-draft mr-2">Save as Draft</a> <a href="usertable.html" class="btn-add">Finish</a>
+                                </div>
+                               </form>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!--/. container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+</div>
+    <!-- ./wrapper -->
+    <!-- Modal -->
+<div id="popup1" class="overlay">
+    <div class="popup popup2">
+      <!-- <a class="close" href="#">&times;</a> -->
+       <div class="content">
+        <div class="title">
+          <h4>Save as Draft </h4>
+          <p>Do you want to save this as draft?</p>
+        </div>
+        <div class="floatbtn">
+            <a href="create-usermang.html" class="btn-add btn-cancel mr-2">Cancel</a>  <a href="mydraft.html" class="btn-add">Save</a>
+        </div>
+     </div>
+  </div>
+  </div>
+ <!-- Modal -->
+ <div id="popup2" class="overlay">
+  <div class="popup popup2">
+    <a class="close" href="create-usermang.html"><img src="dist/img/cancel.png" alt="Logo" class="" width="12px"></a>
+     <div class="content">
+      <div class="title">
+        <h4>Modules for Prospect (09) </h4>
+        <p class="mb-3">Casual Sales</p>
+        <p class="mb-3">Casual Sales Report</p>
+        <p class="mb-3">Exit Process</p><p class="mb-3">Renovation Process</p><p class="mb-3">Casual Sales Report</p>
+        <p class="mb-3">Renovation Process</p>
+      </div>
+     
+   </div>
+</div>
+</div>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--text editor plugin-->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+
+    <script src="dist/js/theme.min.js"></script>
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="dist/js/demo.js"></script>
+
+</body>
+
+</html>
